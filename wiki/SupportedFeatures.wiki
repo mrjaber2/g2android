@@ -1,12 +1,12 @@
 #labels Featured
 #Version 1.0
-  *connection to the remote gallery2 of your choice
-  *browsing albums using a basic ListView
-  *browsing pictures using Gallery and ImageSwitcher
+  * connection to the remote gallery2 of your choice
+  * browsing albums using a basic ListView
+  * browsing pictures using Gallery and ImageSwitcher
 
 As of version 1.0 G2Android does not support :
-  *login in to the gallery
-  *downloading and saving picture from the gallery to the phone
-  *sending photos to the remote gallery
-  *creating new albums
+  * login in to the gallery
+  * downloading and saving picture from the gallery to the phone
+  * sending photos to the remote gallery
+  * creating new albums
   
