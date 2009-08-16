@@ -1,12 +1,16 @@
 #labels Featured
-#Version 1.0
+=Version 1.1, 17th of August 2009=
+  * New feature : login into the gallery using your username/password, solving issue #1
+  * New screen activity added : FirstTime, to explain the user what this project is about
+
+=Version 1.0, 14th of August 2009=
   * connection to the remote gallery2 of your choice
   * browsing albums using a basic ListView
   * browsing pictures using Gallery and ImageSwitcher
 
-As of version 1.0 g2android does not support :
-  * login in to the gallery
-  * selection of HTTP port
+As of version 1.1 g2android does not support :
+  * ~~login in to the gallery~~ added in version 1.1
+  * ~~selection of HTTP port~~ added in version 1.1
   * HTTPS connection
   * downloading and saving picture from the gallery to the phone
   * sending photos to the remote gallery
