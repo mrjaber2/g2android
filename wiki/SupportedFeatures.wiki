@@ -1,7 +1,10 @@
 #labels Featured
-=Version 1.1.1, 19th of August 2009= Bug fixes
+
+=Version 1.1.1, 19th of August 2009  Bug fixes =
+
   * issue #2 (large galleries with hundreds of albums) and 
   * issue #3 (dynamic cookie naming)
+
 =Version 1.1, 17th of August 2009=
 
   * New feature : login into the gallery using your username/password, solving issue #1
