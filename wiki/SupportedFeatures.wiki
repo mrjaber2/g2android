@@ -1,25 +1,30 @@
 #labels Featured
-
-=Version 1.1.1, 19th of August 2009  Bug fixes =
+==Version 1.1.1, 19th of August 2009  Bug fixes ==
 
   * issue #2 (large galleries with hundreds of albums) and 
   * issue #3 (dynamic cookie naming)
 
-=Version 1.1, 17th of August 2009=
+==Version 1.1, 17th of August 2009==
 
   * New feature : login into the gallery using your username/password, solving issue #1
   * New screen activity added : FirstTime, to explain the user what this project is about
 
-=Version 1.0, 14th of August 2009=
+==Version 1.0, 14th of August 2009==
   * connection to the remote gallery2 of your choice
   * browsing albums using a basic ListView
   * browsing pictures using Gallery and ImageSwitcher
 
-As of version 1.1 g2android does not support :
-  * ~~login in to the gallery~~ added in version 1.1
+==Prioritized Product Backlog==
+  * ~~logging into the gallery~~ added in version 1.1
   * ~~selection of HTTP port~~ added in version 1.1
-  * HTTPS connection
-  * downloading and saving picture from the gallery to the phone
-  * sending photos to the remote gallery
+  * sending photos from the phone to the remote gallery
+  * sending photos from the camera to the remote gallery
   * creating new albums
+  * downloading and saving picture from the gallery to the phone
+  * HTTPS connection
+  * i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml
+  * make the ui look better (custom views, not Android default views)
+  * display progress bar (or circles) to make the user wait while retrieving the infos
+  * save galleries infos : instead of saving the gallery infos in the settings, save them into a SQLLite DB : users would be able to save multiple galleries and choose between them at the start screen
+ 
   
