@@ -21,6 +21,7 @@
   * sending photos from the camera to the remote gallery
   * creating new albums
   * downloading and saving pictures from the gallery to the phone
+  * check for updates and then ask the user whether he wants to upgrade using the android market or not
   * test the app with an android advanced device skin (larger display than 320pix., example archos devices) : http://applibs.com
   * HTTPS connection
   * i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml
