@@ -1,4 +1,11 @@
 #labels Featured
+==Version 1.2.0, 29th of August 2009  Major release ==
+
+  * upload photo to gallery
+  * create new subalbums
+  * new progress dialogs (using multi threading AsyncTask)
+
+
 ==Version 1.1.1, 19th of August 2009  Bug fixes ==
 
   * issue #2 (large galleries with hundreds of albums) and 
