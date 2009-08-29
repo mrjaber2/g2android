@@ -4,7 +4,8 @@
   * upload photo to gallery
   * create new subalbums
   * new progress dialogs (using multi threading AsyncTask)
-
+  * issue #4 (navigation not consistent through albums) and 
+  * issue #5 (password in clear text)
 
 ==Version 1.1.1, 19th of August 2009  Bug fixes ==
 
