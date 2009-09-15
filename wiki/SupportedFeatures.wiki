@@ -28,7 +28,7 @@
   * ~~display progress bar (or circles) to make the user wait while retrieving the infos~~ _added in version 1.2.0_
   * ~~sending photos from the phone to the remote gallery~~ _added in version 1.2.0_
   * ~~creating new albums~~ _added in version 1.2.0_
-  * ~~test the app with an android advanced device skin (larger display than 320pix., example : archos devices) : http://appslib.com~~ _tested in version 1.2.0_
+  * ~~test the app with an android advanced device skin (larger display than 320pix., example : archos devices) : http://appslib.com   ~~ _tested in version 1.2.0_
   * HTTPS connection
   * Show FAQ/Troubleshooting wiki page in the about screen
   * sending photos from the camera to the remote gallery
