@@ -1,0 +1,16 @@
+#labels Featured,Phase-Support
+#This page lists all the questions a user may ask about G2Android (with their answers!), including questions such as "It doesn't work with my gallery, what's wrong with it ?" 
+
+=General questions about G2Android features and compatibility=
+  Q: Is G2Android compatible with the old Gallery (the first, not Gallery2) or the newer Gallery3 ?
+A: G2Android has only been tested with Gallery2, not with Gallery (but it should work with it, because the remote API seems to be the same) or Gallery3. According to this page http://codex.gallery2.org/Gallery3:API , Gallery3 won't use the same remote API as before, so don't expect G2Android to work with Gallery3 for now, maybe later when all the main features will be implemented (by the end of 2009 ?)
+----
+=G2Android does not work with my gallery=
+  Q: G2Android works fine with the default demo Gallery, but not with mine
+A: The most typical reason is because you did not activate the Gallery Remote Module in your gallery ( [http://codex.gallery2.org/Gallery2:Modules:remote Gallery Remote Module page]). Without it activated, you won't get G2Android working on your gallery
+
+Q: My gallery is password protected on album level and not on user level ([http://codex.gallery2.org/Gallery2:Modules:password gallery password module]), can G2Android list and display such albums ?
+A: I don't think so, it has been reported no to work, and the Gallery Remote Api page does not mention how to list such albums (maybe I'm wrong, I'm going it by myself)
+
+Q: My gallery has the Remote Module activated, is not protected  on the album level, but G2android still can't connect to it
+A: It may be a bug, please report it on this page http://code.google.com/p/g2android/issues/list, it will be taken care of
