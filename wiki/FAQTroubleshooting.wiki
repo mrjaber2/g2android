@@ -4,6 +4,9 @@
 ==General questions about G2Android features and compatibility==
   ===Q: Is G2Android compatible with the old Gallery (the first, not Gallery2) or the newer Gallery3 ?===
 A: G2Android has only been tested with Gallery2, not with Gallery (but it should work with it, because the remote API seems to be the same) or Gallery3. According to this page http://codex.gallery2.org/Gallery3:API , Gallery3 won't use the same remote API as before, so don't expect G2Android to work with Gallery3 for now, maybe later when all the main features will be implemented (by the end of 2009 ?)
+  ===Q: I know a bit of Java and Android development, or I want to translate the application in my language, how can I help ?===
+A: You can contact me, the project owner, anthony.dahanne at gmail.com, and I'll create you a contributor account on the project. If you want to translate, G2Android will soon be i18n compliant, so you can already translate the values in [http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml the strings file] and send me by mail your translation; in a very near future, you'll be able to commit this file by yourself (when the application will be i18n compliant)
+
 ----
 ==G2Android does not work with my gallery==
   ===Q: G2Android works fine with the default demo Gallery, but not with mine===
