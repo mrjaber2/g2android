@@ -1,4 +1,10 @@
 #labels Featured
+==Version 1.2.1, 15th of October 2009  Bug Fixes ==
+
+  * I18N (french language added, if you want to, please translate http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml in your language (the values, not the keys, and I will add your language for next release)
+  * issue #8 (port parametrizing) and 
+  * issue #9 (don't login at bootup)
+
 ==Version 1.2.0, 29th of August 2009  Major release ==
 
   * upload photo to gallery
