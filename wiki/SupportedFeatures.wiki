@@ -38,7 +38,7 @@
   * HTTPS connection
   * Show FAQ/Troubleshooting wiki page in the about screen
   * sending photos from the camera to the remote gallery
-  * i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml
+  * ~~i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml~~
   * check for updates and then ask the user whether he wants to upgrade using the android market or not
   * downloading and saving pictures from the gallery to the phone
   * make the ui look better (custom views, not Android default views)
