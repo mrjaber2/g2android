@@ -52,14 +52,14 @@
   * ~~sending photos from the phone to the remote gallery~~ _added in version 1.2.0_
   * ~~creating new albums~~ _added in version 1.2.0_
   * ~~test the app with an android advanced device skin (larger display than 320pix., example : archos devices) : http://appslib.com   ~~ _tested in version 1.2.0_
-  * Show FAQ/Troubleshooting wiki page in the about screen
-  * sending photos from the camera to the remote gallery
   * ~~i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml ~~
   * ~~downloading and saving pictures from the gallery to the phone~~
+  * ~~share a photo link via twitter, gmail, mail, etc...~~
   * make the ui look better (custom views, not Android default views)
-  * save galleries infos : instead of saving the gallery infos in the settings, save them into a SQLLite DB : users would be able to save multiple galleries and choose between them at the start screen
-  * share a photo link via twitter, gmail, mail, etc...
+  * Show FAQ/Troubleshooting wiki page in the about screen
+  * sending photos from the camera or other graphical applications to the remote gallery
 
 ==Features that WON'T be released==
   * HTTPS connection with a non valid SSL certificate
   * check for updates and then ask the user whether he wants to upgrade using the android market or not (because Android Market seems to do it now)
+  * save galleries infos : instead of saving the gallery infos in the settings, save them into a SQLLite DB : users would be able to save multiple galleries and choose between them at the start screen
