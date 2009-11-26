@@ -1,4 +1,12 @@
 #labels Featured
+==Version 1.4.0, 26th of November 2009  Major release ==
+
+  * cache feature extended to thumbnails
+  * sharing and sending photos (via twitter or mail)
+  * new "jump to" feature
+  * massive refactoring of G2ConnectionUtils, only one API used now
+  * issue #14 (toast message is late)
+
 ==Version 1.3.0, 22nd of October 2009  Major release ==
 
   * new cache feature
