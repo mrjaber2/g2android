@@ -1,4 +1,9 @@
 #labels Featured
+==Version 1.4.1, 29th of November 2009  Bug Fixes ==
+
+  * issue #17 (rotating the phone makes navigation reset)
+  * issue #16 ((really)full screen mode)
+
 ==Version 1.4.0, 26th of November 2009  Major release ==
 
   * cache feature extended to thumbnails
