@@ -1,4 +1,16 @@
 #labels Featured
+==Version 1.4.3, 2nd of March 2010  Bug Fixes ==
+
+  * issue #25 embedded galleries are now available via g2android
+  * issue #27 no more errors while quickly browsing the gallery
+  * issue #30 thanks to the .nomedia file; temporary g2android files won't show up anymore in Android gallery app.
+
+
+==Version 1.4.2, 23rd of December 2009  Bug Fixes ==
+
+  * SQLLite is now used to save states, for example when you receive a phone call while browsing the gallery, you'll be able to return to the gallery without getting a force close exception
+
+
 ==Version 1.4.1, 29th of November 2009  Bug Fixes ==
 
   * issue #17 (rotating the phone makes navigation reset)
