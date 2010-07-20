@@ -1,4 +1,14 @@
 #labels Featured
+==Version 1.5.0, 19th of July 2010  Major release ==
+
+  * issue #33 Enable uploaded photo title modification
+  * issue #41 Malformed Gallery 2 URL leads to G2Android forced close
+  * issue #37 Uploaded photo looses .jpg file extension
+  * issue #42 Feature Suggestion: Provide automatic login when started
+  * issue #20 Share via camera app?
+  * issue #15 Enhancement: Add multiple photo uploading
+
+
 ==Version 1.4.3, 2nd of March 2010  Bug Fixes ==
 
   * issue #25 embedded galleries are now available via g2android
@@ -72,9 +82,10 @@
   * ~~i18n at least french, spanish and chinese, ask the community to translate in other languages, make sure every string is present in http://code.google.com/p/g2android/source/browse/trunk/g2android/res/values/strings.xml ~~
   * ~~downloading and saving pictures from the gallery to the phone~~
   * ~~share a photo link via twitter, gmail, mail, etc...~~
+  * ~~sending photos from the camera or other graphical applications to the remote gallery~~
   * make the ui look better (custom views, not Android default views)
   * Show FAQ/Troubleshooting wiki page in the about screen
-  * sending photos from the camera or other graphical applications to the remote gallery
+
 
 ==Features that WON'T be released==
   * HTTPS connection with a non valid SSL certificate
