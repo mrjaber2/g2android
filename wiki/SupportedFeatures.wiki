@@ -7,6 +7,8 @@
   * issue #42 Feature Suggestion: Provide automatic login when started
   * issue #20 Share via camera app?
   * issue #15 Enhancement: Add multiple photo uploading
+New graphics from Dan (http://www.gdl3d.com/)
+I18N for Chinese (zh_CN and zh_TW) provided by http://goapk.com
 
 
 ==Version 1.4.3, 2nd of March 2010  Bug Fixes ==
