@@ -1,4 +1,14 @@
 #labels Featured
+==Version 1.6.0, 25th of August 2010  Major release ==
+
+  * issue #19 zoom feature, using the standard Android gallery app
+  * issue #45 Deleted image via browser, crashed g2android. 
+  * issue #46 Upload from inside g2android won't do multiple images 
+  * issue #48 Current album is not pre selected when adding a photo to it 
+  * issue #49 when adding a photo, list of albums should be sorted 
+  * issue #57 Uploading images are automatically given a g2android summary and description 
+And also UI improvement for the album view, begin of HTTPS support (#32 for non logged in users)
+
 ==Version 1.5.0, 19th of July 2010  Major release ==
 
   * issue #33 Enable uploaded photo title modification
