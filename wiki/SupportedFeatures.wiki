@@ -1,4 +1,10 @@
 #labels Featured
+==Version 1.6.0, 2nd of October 2010  bug fixes ==
+
+  * issue #65 collision if several pictures have the same filename in different albums 
+  * issue #58 Can't enter an IP as Gallery URL 
+  * issue #38 Cannot connect to international domain names  
+
 ==Version 1.6.0, 25th of August 2010  Major release ==
 
   * issue #19 zoom feature, using the standard Android gallery app
