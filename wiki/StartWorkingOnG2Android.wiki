@@ -1,5 +1,5 @@
-# Install the Android SDK and Eclipse http://developer.android.com/sdk/index.html
-# Checkout the application with svn checkout http://g2android.googlecode.com/svn/trunk/ g2android-read-only
-# In Eclipse, Import the existing project in the workspace by selecting g2android-read-only/g2android
-# In Eclipse, select Project | Clean... to remove the strange error about the missing 'gen' directory
-# With Context menu on the project, select Run As | Android application to launch it
+  # Install the Android SDK and Eclipse http://developer.android.com/sdk/index.html
+  # Checkout the application with svn checkout http://g2android.googlecode.com/svn/trunk/ g2android-read-only
+  # In Eclipse, Import the existing project in the workspace by selecting g2android-read-only/g2android
+  # In Eclipse, select Project | Clean... to remove the strange error about the missing 'gen' directory
+  # With Context menu on the project, select Run As | Android application to launch it
