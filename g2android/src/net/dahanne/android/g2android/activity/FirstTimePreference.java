@@ -17,32 +17,28 @@
  */
 package net.dahanne.android.g2android.activity;
 
-import android.content.Context;
-import android.content.SharedPreferences.Editor;
-import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceManager;
 
 public class FirstTimePreference extends PreferenceActivity {
 
-	private static String OPT_FIRSTTIME_KEY = "firsttime";
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-	}
-
-	/** Set the value of the firsttime option */
-	public static boolean setFirstTimeTrue(Context context) {
-		Editor edit = PreferenceManager.getDefaultSharedPreferences(context)
-				.edit();
-		return edit.putBoolean(OPT_FIRSTTIME_KEY, true).commit();
-	}
-
-	/** Get the current value of the firsttime option */
-	public static boolean getFirsTime(Context context) {
-		return PreferenceManager.getDefaultSharedPreferences(context)
-				.getBoolean(OPT_FIRSTTIME_KEY, false);
-	}
+	// private static String OPT_FIRSTTIME_KEY = "firsttime";
+	//
+	// @Override
+	// protected void onCreate(Bundle savedInstanceState) {
+	// super.onCreate(savedInstanceState);
+	// }
+	//
+	// /** Set the value of the firsttime option */
+	// public static boolean setFirstTimeTrue(Context context) {
+	// Editor edit = PreferenceManager.getDefaultSharedPreferences(context)
+	// .edit();
+	// return edit.putBoolean(OPT_FIRSTTIME_KEY, true).commit();
+	// }
+	//
+	// /** Get the current value of the firsttime option */
+	// public static boolean getFirsTime(Context context) {
+	// return PreferenceManager.getDefaultSharedPreferences(context)
+	// .getBoolean(OPT_FIRSTTIME_KEY, false);
+	// }
 
 }

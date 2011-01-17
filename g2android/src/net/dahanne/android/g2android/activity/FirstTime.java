@@ -19,25 +19,90 @@ package net.dahanne.android.g2android.activity;
 
 import net.dahanne.android.g2android.R;
 import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 
-public class FirstTime extends Activity implements OnClickListener {
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.firsttime);
-		Button button = (Button) findViewById(R.id.ok_id);
-		button.setOnClickListener(this);
+/**
+ * THIS CLASS WAS COPIED FROM THE GPL project Astrid
+ * https://github.com/todoroo/astrid
+ * 
+ * Displays an EULA ("End User License Agreement") that the user has to accept
+ * before using the application. Your application should call
+ * {@link Eula#showEula(android.app.Activity)} in the onCreate() method of the
+ * first activity. If the user accepts the EULA, it will never be shown again.
+ * If the user refuses, {@link android.app.Activity#finish()} is invoked on your
+ * activity.
+ */
+class FirstTime {
+	private static final String PREFERENCE_EULA_ACCEPTED = "eula.accepted"; //$NON-NLS-1$
+	private static final String PREFERENCES_EULA = "eula"; //$NON-NLS-1$
+
+	/**
+	 * Displays the EULA if necessary. This method should be called from the
+	 * onCreate() method of your main Activity.
+	 * 
+	 * @param activity
+	 *            The Activity to finish if the user rejects the EULA
+	 */
+	static void showEula(final Activity activity, boolean isExplicitlyCalled) {
+		final SharedPreferences preferences = activity.getSharedPreferences(
+				PREFERENCES_EULA, Activity.MODE_PRIVATE);
+		if (preferences.getBoolean(PREFERENCE_EULA_ACCEPTED, false)
+				&& !isExplicitlyCalled) {
+			return;
+		}
+
+		final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+		builder.setTitle(R.string.switch_title);
+		builder.setCancelable(true);
+		builder.setPositiveButton(R.string.download_from_market,
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						downloadFromMarket(activity, preferences);
+					}
+				});
+		builder.setNegativeButton(R.string.download_from_project_home,
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						downloadFromProjectHome(activity, preferences);
+					}
+				});
+		builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
+			public void onCancel(DialogInterface dialog) {
+				refuse(activity);
+			}
+		});
+		builder.setMessage(R.string.switching_to_regalandroid);
+		builder.show();
+	}
+
+	private static void downloadFromMarket(Activity activity,
+			SharedPreferences preferences) {
+		preferences.edit().putBoolean(PREFERENCE_EULA_ACCEPTED, true).commit();
+		Intent intent = new Intent(
+				Intent.ACTION_VIEW,
+				Uri.parse("http://market.android.com/details?id=net.dahanne.android.regalandroid"));
+		activity.startActivity(intent);
 
 	}
 
-	public void onClick(View v) {
+	private static void downloadFromProjectHome(Activity activity,
+			SharedPreferences preferences) {
+		preferences.edit().putBoolean(PREFERENCE_EULA_ACCEPTED, true).commit();
+		Intent intent = new Intent(
+				Intent.ACTION_VIEW,
+				Uri.parse("http://code.google.com/p/regalandroid/downloads/list"));
+		activity.startActivity(intent);
+	}
 
-		FirstTimePreference.setFirstTimeTrue(this);
-		this.finish();
+	private static void refuse(Activity activity) {
+		activity.finish();
+	}
 
+	private FirstTime() {
+		// don't construct me
 	}
 }

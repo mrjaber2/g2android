@@ -41,13 +41,14 @@ import android.widget.TextView;
 public class Start extends Activity implements OnClickListener {
 	private static final String TAG = "StartActivity";
 	private Button enterGalleryButton;
+	private Button switchButton;
 	private TextView galleryConfiguredTextView;
 	private TextView loggedInAsText;
 	private ProgressDialog progressDialog;
 	private DBHelper dbHelper;
-	private G2ConnectionUtils g2ConnectionUtils = G2ConnectionUtils
+	private final G2ConnectionUtils g2ConnectionUtils = G2ConnectionUtils
 			.getInstance();
-	private FileUtils fileUtils = FileUtils.getInstance();
+	private final FileUtils fileUtils = FileUtils.getInstance();
 
 	@Override
 	protected void onPause() {
@@ -68,15 +69,18 @@ public class Start extends Activity implements OnClickListener {
 		}
 
 		enterGalleryButton = (Button) findViewById(R.id.enter_gallery_button);
+		switchButton = (Button) findViewById(R.id.switch_button_id);
 		loggedInAsText = (TextView) findViewById(R.id.loggedin_as_id);
 		galleryConfiguredTextView = (TextView) findViewById(R.id.gallery_configured);
 
 		enterGalleryButton.setOnClickListener(this);
+		switchButton.setOnClickListener(this);
 		// if this is the first launch, we print a screen to explain the user
 		// what it is all about !
-		if (!FirstTimePreference.getFirsTime(this)) {
-			startActivity(new Intent(this, FirstTime.class));
-		}
+		// if (!FirstTimePreference.getFirsTime(this)) {
+		// startActivity(new Intent(this, FirstTime.class));
+		// }
+		FirstTime.showEula(this, false);
 
 	}
 
@@ -95,8 +99,10 @@ public class Start extends Activity implements OnClickListener {
 			String username = Settings.getUsername(this);
 			String password = Settings.getPassword(this);
 			String galleryUrl = Settings.getGalleryUrl(this);
-			new LoginTask(this, progressDialog, loggedInAsText, galleryConfiguredTextView, enterGalleryButton).execute(galleryUrl, username, password);
-		}else{
+			new LoginTask(this, progressDialog, loggedInAsText,
+					galleryConfiguredTextView, enterGalleryButton).execute(
+					galleryUrl, username, password);
+		} else {
 			enterGalleryButton.setEnabled(false);
 		}
 	}
@@ -129,10 +135,10 @@ public class Start extends Activity implements OnClickListener {
 			FileUtils.getInstance().clearCache(this);
 			ShowUtils.getInstance().toastCacheSuccessfullyCleared(this);
 			break;
-			
+
 		}
 		return false;
-		
+
 	}
 
 	public void onClick(View v) {
@@ -140,17 +146,17 @@ public class Start extends Activity implements OnClickListener {
 		case R.id.enter_gallery_button:
 			startActivity(new Intent(this, ShowAlbums.class));
 			break;
-//		case R.id.connect_to_gallery_button:
-//			checkGalleryUrlIsValid();
-//			break;
+		case R.id.switch_button_id:
+			FirstTime.showEula(this, true);
+			break;
 		}
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		//we check if we already have a gallery configured
-			checkGalleryUrlIsValid();
+		// we check if we already have a gallery configured
+		checkGalleryUrlIsValid();
 	}
 
 }
