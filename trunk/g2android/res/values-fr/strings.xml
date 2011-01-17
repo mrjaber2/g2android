@@ -120,4 +120,16 @@
 		<string name="no_summary_available">Pas de sommaire disponible</string>
 		<string name="advanced_control_title">Contrôles avancés</string>
 		
+		<!--  new string since 1.6.1 -->
+		<string name="switching_to_regalandroid">
+				Le développemnent de G2Android est fini; ReGalAndroid le remplace.
+				ReGalAndroid est issu du même code source que G2Android, est toujours gratuit, un logiciel libre, et est en plus compatible avec G3 et Piwigo.
+				G2Android est mort, long vie à ReGalAndroid !
+				Je t\'invite à télécharger ReGalAndroid, puisque G2Android n\'est plus maintenu.
+				En utilisant les boutons ci dessous, tu pourras télécharger ReGalAndroid d\'Android Market ou du site de développement
+       </string>
+       <string name="download_from_market">Download from Android Market</string>
+       <string name="download_from_project_home">Download from project home</string>
+       <string name="switch_title">Switch to ReGalAndroid</string>
+		
 </resources>

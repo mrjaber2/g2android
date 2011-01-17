@@ -84,7 +84,7 @@
         <string name="show_albums_title">G2Android Albums</string>
         <string name="show_gallery_title">G2Android Gallery</string>
 		<string name="view_album_pictures">View this album pictures !</string>
-		<string name="current_version">Version : 1.6.2</string>
+		<string name="current_version">Version : 1.6.3</string>
 		<string name="project_home">Project Home : </string>
 		<string name="album_is_empty">This album does not contain any pictures !</string>
 		<string name="type_new_subalbum_name">Type in your new subalbum name : </string>
@@ -158,6 +158,17 @@
 		<string name="no_summary_available">No summary available</string>
 		<string name="advanced_control_title">Advanced controls</string>
 
+		<!--  new string since 1.6.1 -->
+		<string name="switching_to_regalandroid">
+				G2Android development is over; ReGalAndroid (RemoteGallery client for Android) replaces it.
+				ReGalAndroid has been built from G2Android source code, it is still free, still open source, but now compatible with G3 and Piwigo galleries.
+				G2Android is dead, long live ReGalAndroid !
+				I invite you to switch to ReGalAndroid as soon as possible, G2Android is not maintained anymore.
+				Using the buttons below, you can choose to download it from the Android Market or from the project home.
+       </string>
+       <string name="download_from_market">Download from Android Market</string>
+       <string name="download_from_project_home">Download from project home</string>
+       <string name="switch_title">Switch to ReGalAndroid</string>
 		
 		
 </resources>

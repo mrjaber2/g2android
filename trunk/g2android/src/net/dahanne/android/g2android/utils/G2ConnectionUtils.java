@@ -95,7 +95,7 @@ public class G2ConnectionUtils {
 	private static final BasicNameValuePair PROTOCOL_VERSION_NAME_VALUE_PAIR = new BasicNameValuePair(
 			"g2_form[protocol_version]", "2.0");
 	private static final String MAIN_PHP = "main.php";
-	private static final String USER_AGENT_VALUE = "G2Android Version 1.6.2";
+	private static final String USER_AGENT_VALUE = "G2Android Version 1.6.3";
 	private static final String USER_AGENT = "User-Agent";
 	private static final BasicHeader BASIC_HEADER = new BasicHeader(USER_AGENT,
 			USER_AGENT_VALUE);
@@ -471,6 +471,7 @@ public class G2ConnectionUtils {
 			String line;
 			boolean gr2ProtoStringWasFound = false;
 			while ((line = rd.readLine()) != null) {
+				System.out.println(line);
 				if (line.contains(GR2PROTO)) {
 					gr2ProtoStringWasFound = true;
 				}
@@ -478,7 +479,7 @@ public class G2ConnectionUtils {
 					String key = line.substring(0, line.indexOf(EQUALS));
 					String value = line.substring(line.indexOf(EQUALS) + 1);
 					if (key.equals(STATUS) && value.equals("403")) {
-						new GalleryConnectionException(
+						throw new GalleryConnectionException(
 								"The file was received, but could not be processed or added to the album.");
 					}
 					properties.put(key, value);
